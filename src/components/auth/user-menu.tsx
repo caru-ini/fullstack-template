@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Skeleton } from "@/components/ui/skeleton";
 import { client, useSession } from "@/lib/auth-client";
-import { LogOut, User } from "lucide-react";
+import { ChevronRight, LogOut, User } from "lucide-react";
 import { getImageProps } from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -52,8 +52,11 @@ export const UserMenu = () => {
           })
         }
         variant="outline"
+        size="lg"
+        className="rounded-full"
       >
         Sign in
+        <ChevronRight className="ml-1 size-4" />
       </Button>
     );
   }
