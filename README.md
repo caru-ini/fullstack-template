@@ -3,7 +3,7 @@
 [![CI](https://github.com/caru-ini/fullstack-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/caru-ini/fullstack-template/actions/workflows/ci.yaml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-9.x-f69220?logo=pnpm&logoColor=white)](https://pnpm.io)
-[![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev)
 [![Hono](https://img.shields.io/badge/Hono-4.x-ff6a00)](https://hono.dev)
 [![Prisma](https://img.shields.io/badge/Prisma-6.x-2D3748?logo=prisma&logoColor=white)](https://www.prisma.io/)
@@ -36,7 +36,7 @@ A modern, production-ready fullstack template built with Next.js, Hono, Better A
 
 ## Tech Stack
 
-- Frontend: Next.js 15, React 19, Tailwind CSS 4, shadcn/ui, Lucide Icons, React Icons
+- Frontend: Next.js 16, React 19, Tailwind CSS 4, shadcn/ui, Lucide Icons, React Icons
 - Backend: Hono (RPC ready), Better Auth, Zod validation
 - Data: PostgreSQL, Prisma 6
 - Tooling: TypeScript 5, pnpm, ESLint 9, Prettier 3, Husky, lint-staged
