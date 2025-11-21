@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Check, ChevronDown, type LucideIcon, Moon, Sun, Wrench } from "lucide-react";
 import { useTheme } from "next-themes";
-import { createElement, useEffect, useState } from "react";
+import { createElement } from "react";
 
 const themeIcons: Record<string, LucideIcon> = {
   light: Sun,
@@ -19,11 +19,6 @@ const themeIcons: Record<string, LucideIcon> = {
 
 export function ThemeToggle({ variant = "icon" }: { variant?: "icon" | "dropdown" }) {
   const { theme: current, themes, setTheme } = useTheme();
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   return variant === "icon" ? (
     <Button
@@ -56,9 +51,9 @@ export function ThemeToggle({ variant = "icon" }: { variant?: "icon" | "dropdown
       <DropdownMenuContent align="end">
         {themes.map((theme) => (
           <DropdownMenuItem key={theme} onClick={() => setTheme(theme)}>
-            {createElement(themeIcons[theme], { className: "mr-2 size-4" })}
+            {createElement(themeIcons[theme] ?? Wrench, { className: "mr-2 size-4" })}
             {theme}
-            {isMounted && theme === current ? <Check className="ml-auto size-4" /> : null}
+            {theme === current ? <Check className="ml-auto size-4" /> : null}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
